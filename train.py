@@ -81,7 +81,6 @@ for epoch in range(opt.epochs):
         targets = Variable(targets.type(Tensor), requires_grad=False)
 
         optimizer.zero_grad()
-
         loss = model(imgs, targets)
 
         loss.backward()
